@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hauts de France</title>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="../script/Myscript.js"></script>
+	</head>
+	<body>
+		<div id="mainpage">
+			<header>
+				<div id="title">
+					<h1>Les</h1>
+					<h1>Hauts-de-France</h1>
+				</div>
+				<img id="headerLogo" src="../images/logoHDF.png"/>
+			</header>
+			<nav>
+				<ul id="menu">
+					<li><a id="firstMenu" href="../index.html"><p>Accueil</p></a></li>
+					<li><a href="../actualite.html"><p>Actualité</p></a></li>
+					<li><a href="../"><p>Patrimoine</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../histoire.html"><p>Histoire</p></a></li>
+							<li><a href="../specialites.html"><p>Spécialités</p></a></li>
+						</ul>
+					</li>
+					<li><a class="current" href="../tourisme.html"><p>Tourisme</p></a>
+					</li>
+					<li><a href="../"><p>Carte</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../carte.html"><p>Agglomérations</p></a></li>
+							<li><a href="../meteo.html"><p>Météo</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<h2 style="text-align:center">La Ville de Lille</h2>
+
+			<p>Capitale de la région Hauts-de-France et ville d'Art et d'Histoire, Lille présente un patrimoine architectural et culturel remarquable. Son quartier historique, riche en monuments, façades flamandes et rues piétonnes agréables, invite tout particulièrement à la flânerie. La Vieille Bourse, donnant sur la célèbre Grand'Place, est un splendide bâtiment de style baroque flamand datant du XVIIe siècle. Ce joyau du Vieux-Lille est constitué de vingt-quatre maisons encadrant une charmante cour intérieure. Celle-ci accueille bouquinistes, fleuristes ou encore joueurs d'échecs. Haut lieu de l'animation, la Grand'Place, au milieu de laquelle s'élève la colonne de la Déesse, est entourée de beaux édifices.</p>
+			<p>La découverte du patrimoine lillois se poursuit avec le palais Rihour, un monument gothique du XVe siècle qui abrite aujourd'hui l'office de tourisme ; la place du Théâtre avec l'Opéra et le beffroi de la Chambre de Commerce ; les rues bordées de maisons anciennes et d'hôtels particuliers ; l'Hospice Comtesse ; le palais des Beaux-Arts ; la citadelle Vauban, "reine des citadelles". Incontournable, le palais des Beaux-Arts, deuxième musée de France après le Louvre pour la richesse de ses collections, abrite de prestigieuses collections de peintures, sculptures, dessins et céramiques. Le musée de l'Hospice Comtesse, situé dans un ancien hôpital fondé au XIIIe siècle par la Comtesse Jeanne de Flandre, propose à ses visiteurs de découvrir la salle des malades, la chapelle, le bâtiment de la communauté ou encore le dortoir. Ce musée renferme également peintures, mobilier et objets d'art.</p>
+			<p>Le musée d'Histoire Naturelle et de Géologie expose des collections de géologie, de zoologie et d'ethnographie. Chaque premier week-end de septembre se tient la célèbre braderie de Lille qui s'étend sur plus de 100 kilomètres de rues ! Un événement à ne pas manquer !</p>
+
+			<div class="row">
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Lille/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Lille/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Lille/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Lille/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 4</div>
+			      <img src="../images/Galleries/Villes/Lille/photo1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 4</div>
+			      <img src="../images/Galleries/Villes/Lille/photo2.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 4</div>
+			      <img src="../images/Galleries/Villes/Lille/photo3.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 4</div>
+			      <img src="../images/Galleries/Villes/Lille/photo4.jpg" style="width:100%">
+			    </div>
+
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			    <div class="caption-container">
+			      <p id="caption"></p>
+			    </div>
+
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Lille/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Lille/photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Lille/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Lille/photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</body>
+</html>

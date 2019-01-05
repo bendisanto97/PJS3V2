@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hauts de France</title>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="../script/Myscript.js"></script>
+	</head>
+	<body>
+		<div id="mainpage">
+			<header>
+				<div id="title">
+					<h1>Les</h1>
+					<h1>Hauts-de-France</h1>
+				</div>
+				<img id="headerLogo" src="../images/logoHDF.png"/>
+			</header>
+			<nav>
+				<ul id="menu">
+					<li><a id="firstMenu" href="../index.html"><p>Accueil</p></a></li>
+					<li><a href="../actualite.html"><p>Actualité</p></a></li>
+					<li><a href="../"><p>Patrimoine</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../histoire.html"><p>Histoire</p></a></li>
+							<li><a href="../specialites.html"><p>Spécialités</p></a></li>
+						</ul>
+					</li>
+					<li><a class="current" href="../tourisme.html"><p>Tourisme</p></a>
+					</li>
+					<li><a href="../"><p>Carte</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../carte.html"><p>Agglomérations</p></a></li>
+							<li><a href="../meteo.html"><p>Météo</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<h2 style="text-align:center">La Ville d'Amiens</h2>
+
+			<p>Capitale de la Picardie et ville d'Art et d'histoire, Amiens possède un joyau de l'art gothique : la cathédrale Notre-Dame. Inscrite au patrimoine mondial de l'UNESCO, la cathédrale d'Amiens est, avec ses 145 mètres de longueur et ses 42 mètres de hauteur, la plus grande cathédrale de France ! Elle présente en outre une très belle homogénéité qui s'explique par le fait qu'elle fut construite en moins d'un siècle. Sa splendide façade, au portail richement décoré, suscite l'admiration... Une statuaire exceptionnelle ! A l'intérieur, les 110 stalles en chêne du choeur sont également remarquables. La colorisation du portail de la cathédrale, qui a lieu tous les soirs en été et pendant le mois de décembre, est un spectacle à ne pas manquer. Un moment durant lequel le spectateur pourra admirer les couleurs qui au Moyen Age ornaient la façade de la cathédrale Notre-Dame.</p>
+
+			<p>Non loin de la cathédrale se trouve le quartier médiéval de Saint-Leu surnommé la "petite Venise du Nord". Cet ancien quartier de tanneurs, de tisserands et de teinturiers est vraiment charmant, avec ses petites maisons colorées qui s'alignent le long des canaux. Du pont de la Dodane, les promeneurs bénéficieront d'une belle vue sur la cathédrale. Les multiples terrasses de restaurants et cafés, agréablement situées au bord de l'eau, incitent à la détente. Tout autour de la cathédrale, les rues commerçantes et les monuments, tels que le logis du Roi, la maison du Sagittaire, la maison du Bailliage ou encore le beffroi, complètent la visite du centre historique avant de partir à la découverte des musées de la ville. Le musée de Picardie réunit des collections d'archéologie, d'art sacré, de peinture et de sculpture. Le musée de l'hôtel de Berny expose objets d'art et mobilier ancien. La maison de Jules Verne, ouverte à la visite, abrite souvenirs, objets et documents du célèbre écrivain qui y vécut pendant 18 ans.</p>
+
+			<div class="row">
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Amiens/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Amiens/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Amiens/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Amiens/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 4</div>
+			      <img src="../images/Galleries/Villes/Amiens/photo1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 4</div>
+			      <img src="../images/Galleries/Villes/Amiens/photo2.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 4</div>
+			      <img src="../images/Galleries/Villes/Amiens/photo3.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 4</div>
+			      <img src="../images/Galleries/Villes/Amiens/photo4.jpg" style="width:100%">
+			    </div>
+
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			    <div class="caption-container">
+			      <p id="caption"></p>
+			    </div>
+
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Amiens/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Amiens/photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Amiens/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Amiens/photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</body>
+</html>

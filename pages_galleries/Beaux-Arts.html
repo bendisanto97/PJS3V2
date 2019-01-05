@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hauts de France</title>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="../script/Myscript.js"></script>
+	</head>
+	<body>
+		<div id="mainpage">
+			<header>
+				<div id="title">
+					<h1>Les</h1>
+					<h1>Hauts-de-France</h1>
+				</div>
+				<img id="headerLogo" src="../images/logoHDF.png"/>
+			</header>
+			<nav>
+				<ul id="menu">
+					<li><a id="firstMenu" href="../index.html"><p>Accueil</p></a></li>
+					<li><a href="../actualite.html"><p>Actualité</p></a></li>
+					<li><a href="../"><p>Patrimoine</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../histoire.html"><p>Histoire</p></a></li>
+							<li><a href="../specialites.html"><p>Spécialités</p></a></li>
+						</ul>
+					</li>
+					<li><a class="current" href="../tourisme.html"><p>Tourisme</p></a>
+					</li>
+					<li><a href="../"><p>Carte</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../carte.html"><p>Agglomérations</p></a></li>
+							<li><a href="../meteo.html"><p>Météo</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<h2 style="text-align:center">Le Palais des Beaux-Arts</h2>
+
+			<p>
+				Situé place de la République dans la capitale des Hauts-de-France, au cœur d'un bâtiment du XIXe siècle, le musée des Beaux-Arts de Lille est le second musée des Beaux-Arts de France en nombre d'œuvres exposées. Parmi ses collections prestigieuses figurent un département Moyen Âge et Renaissance, des peintures européennes (Rubens, Goya, Van Dyck, Delacroix…), des peintures et sculptures françaises du XIXe siècle (Courbet, Puvis de Chavannes, David, Carpeaux, Rodin, Claudel…), une magnifique collection de céramiques des XVIIe et XVIIIe siècles, un cabinet de dessins incluant des feuilles de Raphaël… L'importance des collections fait du palais des Beaux-Arts de Lille, l'un des musées les plus riches de France.</p>
+				<p>Les amateurs d'architecture civile et militaire pourront admirer les plans en relief d'une quinzaine de villes fortifiées par Vauban dans le Nord de la France et en Belgique. Le musée des Beaux-Arts propose toute l'année un très riche programme d'événements culturels et d'animations : expositions, conférences, ateliers pour adultes et enfants, visites pour les familles avec une tablette tactile</p>
+
+			<div class="row">
+			  <div class="column">
+			    <img src="../images/Galleries/Tourisme/Abbaye/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Tourisme/Abbaye/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Tourisme/Abbaye/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Tourisme/Abbaye/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 4</div>
+			      <img src="../images/Galleries/Tourisme/Abbaye/photo1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 4</div>
+			      <img src="../images/Galleries/Tourisme/Abbaye/photo2.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 4</div>
+			      <img src="../images/Galleries/Tourisme/Abbaye/photo3.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 4</div>
+			      <img src="../images/Galleries/Tourisme/Abbaye/photo4.jpg" style="width:100%">
+			    </div>
+
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			    <div class="caption-container">
+			      <p id="caption"></p>
+			    </div>
+
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Tourisme/Abbaye/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Tourisme/Abbaye/photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Tourisme/Abbaye/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Tourisme/Abbaye/photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</body>
+</html>

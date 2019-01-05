@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hauts de France</title>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../style/style.css"/>
+		<script src="../script/Myscript.js"></script>
+	</head>
+	<body>
+		<div id="mainpage">
+			<header>
+				<div id="title">
+					<h1>Les</h1>
+					<h1>Hauts-de-France</h1>
+				</div>
+				<img id="headerLogo" src="../images/logoHDF.png"/>
+			</header>
+			<nav>
+				<ul id="menu">
+					<li><a id="firstMenu" href="../index.html"><p>Accueil</p></a></li>
+					<li><a href="../actualite.html"><p>Actualité</p></a></li>
+					<li><a href="../"><p>Patrimoine</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../histoire.html"><p>Histoire</p></a></li>
+							<li><a href="../specialites.html"><p>Spécialités</p></a></li>
+						</ul>
+					</li>
+					<li><a class="current" href="../tourisme.html"><p>Tourisme</p></a>
+					</li>
+					<li><a href="../"><p>Carte</p></a>
+						<ul class="submenu">
+							<li class="firstSubMenu"><a href="../carte.html"><p>Agglomérations</p></a></li>
+							<li><a href="../meteo.html"><p>Météo</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<h2 style="text-align:center">La Ville de Dunkerque</h2>
+
+			<p>Troisième port de France et cité du célèbre corsaire Jean Bart, Dunkerque est dotée d'une riche histoire maritime. Le musée portuaire, situé dans l'ancien entrepôt des tabacs, relate l'histoire du port de Dunkerque. Ce lieu propose également la découverte de trois bateaux : le trois-mâts Duchesse-Anne, la péniche Guilde et le bateau-feu Sandettie. Après avoir visité le musée et flâné sur les quais du bassin du Commerce, une promenade en bateau pour mieux découvrir le port et ses différentes installations s'impose. Outre ce patrimoine portuaire, Dunkerque possède deux beffrois classés au patrimoine mondial de l'UNESCO, celui de l'église Saint-Éloi et celui de l'hôtel de ville.
+			<p>Le musée des Beaux-Arts abrite des collections de peintures des écoles flamande, française, hollandaise et italienne. A ces multiples découvertes s'ajoute la détente avec la belle plage de sable fin de Malo-les-Bains, surnommée la "reine des plages du nord".</p>
+			<p>Chaque année aux mois de janvier et février, le célèbre carnaval de Dunkerque anime et colore les rues de la ville.</p>
+
+			<div class="row">
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Dunkerque/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Dunkerque/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Dunkerque/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			  </div>
+			  <div class="column">
+			    <img src="../images/Galleries/Villes/Dunkerque/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			  </div>
+			</div>
+
+			<div id="myModal" class="modal">
+			  <span class="close cursor" onclick="closeModal()">&times;</span>
+			  <div class="modal-content">
+
+			    <div class="mySlides">
+			      <div class="numbertext">1 / 4</div>
+			      <img src="../images/Galleries/Villes/Dunkerque/photo1.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">2 / 4</div>
+			      <img src="../images/Galleries/Villes/Dunkerque/photo2.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">3 / 4</div>
+			      <img src="../images/Galleries/Villes/Dunkerque/photo3.jpg" style="width:100%">
+			    </div>
+
+			    <div class="mySlides">
+			      <div class="numbertext">4 / 4</div>
+			      <img src="../images/Galleries/Villes/Dunkerque/photo4.jpg" style="width:100%">
+			    </div>
+
+			    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			    <div class="caption-container">
+			      <p id="caption"></p>
+			    </div>
+
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Dunkerque/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Dunkerque/photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Dunkerque/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+			    </div>
+			    <div class="column">
+			      <img class="demo cursor" src="../images/Galleries/Villes/Dunkerque/photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</body>
+</html>
